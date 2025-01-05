@@ -19,7 +19,7 @@ Before running the script, ensure the following:
    - A Linux-based OS is required.
 
 2. **Virtualization Support**:
-   - Ensure your CPU supports virtualization (check with `egrep -c '(vmx|svm)' /proc/cpuinfo`).
+   - Ensure your CPU supports virtualization (check with `lscpu | grep Virtualization`).
    - Enable virtualization in your system BIOS/UEFI settings.
 
 3. **AWS Account Requirements**:
@@ -45,7 +45,7 @@ Install the following KVM tools and dependencies to ensure the script works as e
 For Ubuntu/Debian-based systems, run:
 ```bash
 sudo apt update && sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils cloud-utils python3
-
+```
 ### How does it work?
 
 1. Clone the project to your local computer
