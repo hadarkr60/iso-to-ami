@@ -51,3 +51,9 @@ sudo apt update && sudo apt install -y qemu-kvm libvirt-daemon-system libvirt-cl
 1. Clone the project to your local computer
 2. Fill your values within the config.env file
 3. Run the script after make it executable
+
+### Screenshot of the running intance created from the script:
+
+![Project Image](running_instance.png)
+
+
